@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack -w",
-    "start:dev": "./node_modules/.bin/webpack-dev-server"
+    "build": "./node_modules/.bin/webpack -w",
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title><%= htmlWebpackPlugin.options.title %></title>
-
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <link rel="stylesheet" type="text/css" href="../styles/app.css">
 </head>
 
@@ -13,6 +13,7 @@
 
   <div id="app">
     <div>
+      <!-- Changes y axis using this select box -->
       <select id="chart-selector">
         <option value="clickThruRate">Click Thru Rate</option>
         <option value="sales">Sales</option>
@@ -20,10 +21,9 @@
         <option value="orders">Orders</option>
       </select>
     </div>
+    <!-- Google line chart will be attached here -->
     <div id="line-chart"></div>
   </div>
-
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>

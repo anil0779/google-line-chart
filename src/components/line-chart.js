@@ -7,6 +7,7 @@ var event = events.subscribe('data-loaded', function (data) {
 
         var dataTable = new google.visualization.DataTable();
         dataTable.addColumn('date', 'Date');
+        // fallback to clickThruRate on initial load /or if no y-axis value
         dataTable.addColumn('number', data.yaxisDisplay || 'Click Thru Rate');
 
         var initialRows = data.records.map(function (item) {
